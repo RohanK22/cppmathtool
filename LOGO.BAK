@@ -1,0 +1,30 @@
+#include "H:\finpro\graph.h"
+
+double x,y,dx=0.001,s=0,scx=1,scy=1,m,d;
+
+int ed;
+
+
+int stx=200,edx=500,sty=100,edy=300;
+#define f(x) cos(x)
+void main()
+{       extern int errno;
+	initialize_graphics();
+	initialize_background();
+	int sx=getmaxy()/2;
+	int sy=getmaxx()/2;
+	for(int xa=stx;xa<edx;xa++)
+		putpixel(xa,getmaxy()/2,8);
+	for(int ya=sty;ya<edy;ya++)
+		putpixel(getmaxx()/2,ya,5);
+	float len=5;
+	for(x=-stx*scx;x<edx;x+=dx)
+	{
+		if(fabs(x*scx)<edx*scx)
+		{       y=f(x);
+			plot(x,y,c,0,len,sx,sy,m);
+
+		}
+	}
+	getch();
+}

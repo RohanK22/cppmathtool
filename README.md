@@ -1,4 +1,4 @@
-# Math Graph Calculator
+# MAXIMUS: A 2D Math Graph Calculator
 A Mathematical function graphing tool, inspired by [Desmos](https://www.desmos.com/) and built with C++, by Gautham M Prabhu and Rohan Kumar.
 
 It can calculate 2D graphs of several types of functions including linear, quadratic, cubic, sin or trig functions.
